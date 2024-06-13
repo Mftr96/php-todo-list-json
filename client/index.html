@@ -4,19 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="style.css">
 
     <title>client receiver </title>
 </head>
 
+<script src="https://unpkg.com/vue@3.4.27/dist/vue.global.js"></script>
+
 <body>
     <!-- contenuto pagina in vue  -->
     <div id="app">
+        <ul>
+            <li v-for="task in to_do">
+                {{task.evento}}
 
+            </li>
+        </ul>    
     </div>
-<script src="./main.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
