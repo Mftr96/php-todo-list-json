@@ -8,7 +8,7 @@ $file_content=file_get_contents(("dati.json"));
 //stringa per importare poi contenuto
 header('Content-type: application/json');
 //converto array in formato JSON   
-$json_string=json_encode($to_do);
+$json_string=json_encode($file_content);
 //stampo risultato 
 echo $file_content;
 ?>

@@ -21,7 +21,7 @@ createApp({
     //debug console log 
     console.log("app");
     //milestone 1 14/06/2024:aggiorno chiamata axios
-    axios.get(apiURL)
+    axios.get("../list.php")
     .then(results=>{
       this.to_do=results.data;
     });
