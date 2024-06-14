@@ -2,12 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color:white;
 }
 
-body{
-    background-color: #444;
-}
 
 ul{
     margin-left: 2rem;
@@ -18,5 +14,5 @@ ul{
 }
 
 .pending{
-    color: yellow;
+    color: crimson;
 }

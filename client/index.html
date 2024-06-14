@@ -21,6 +21,9 @@
                 {{task.evento}}
             </li>
         </ul>
+        <input type="text" v-model="new_event" name="" id="">
+        <p>{{new_event}}</p>
+        <button @click="get_new_task()">aggiungi</button>
     </div>
     <script src="./js/main.js"></script>
 </body>
