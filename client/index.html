@@ -16,11 +16,11 @@
     <!-- contenuto pagina in vue  -->
     <div id="app">
         <ul>
-            <li v-for="task in to_do">
+            <!-- risolvere cambio colore al click -->
+            <li v-for="task in to_do" @click="get_done(task.completato)" :class=" task.completato==true ? 'done':'pending'">
                 {{task.evento}}
-
             </li>
-        </ul>    
+        </ul>
     </div>
     <script src="./js/main.js"></script>
 </body>
